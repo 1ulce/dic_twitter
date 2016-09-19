@@ -11,6 +11,9 @@ header {
   background: #fff;
   height: 46px;
   border-bottom: 1px solid rgba(0,0,0,0.05);
+  span{
+    margin-right: 10px;
+  }
   nav.navbar{
     position: fixed;
     top: 0;
@@ -32,6 +35,18 @@ header {
       text-decoration: none;
     }
   }
+  .nav-right{
+    position:fixed;
+    right:20px;
+  }
+  h1.top-icon{
+    margin: 0;
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    color: #2196f3;
+  }
 }
 header ul:after {
   content: "";
@@ -49,8 +64,29 @@ header ul:after {
   line-height: inherit;
   padding: 15px;
 }
-.tweets{
-  border-bottom: 1px solid #e1e8ed;
+.wrapper{
+  .tweets{
+    border-bottom: 1px solid #e1e8ed;
+    padding: 9px 12px;
+    .tweet-operation{
+      text-align: right;
+      margin-right: 20px;
+    }
+  }
+  .index-form{
+    border-bottom: 1px solid #e1e8ed;
+    padding: 0px 12px 6px 12px;
+  }
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  height: 20px;
+  background-color: #357ebd;
+  color: #fff;
 }
 .page-top-btn {
   display: block;

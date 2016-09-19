@@ -12,25 +12,33 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a href= "#"><span class="lnr lnr-home"></span></a>
+          <a href= "/"><span class="lnr lnr-home"></span></a>
           <span class="lnr lnr-alarm"></span>
           <span class="lnr lnr-envelope"></span>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+        <div class="nav-right">
+          <ul class="nav navbar-nav">
             <span class="lnr lnr-magnifier"></span>
-            <a href= "#"><span class="lnr lnr-pencil"></span></a>
+            <a href= "/tweets/new"><span class="lnr lnr-pencil"></span></a>
           </ul>
         </div><!-- /.navbar-collapse -->
+        <h1 class="lnr lnr-diamond top-icon"></h1>
       </div><!-- /.container-fluid -->
     </nav>
   </header>
+  <% if notice %>
+    <div class= "alert alert-success" role="alert">
+      <p><%= notice %></p>
+    </div>
+  <% end %>
   <div class="contents container">
     <div class= "row top-row">
       <div class="col-md-4 col-sm-4">
         <section>
           <div class="dashboard dashboard-left">
-            <span>yo</span>
+            <h4>Twitter風webアプリ</h4>
+            <p>このサイトはruby on railsの練習として作成されました。</p>
+            <p>せっかくなので好きな本のタイトルでも書いていってね。</p>
           </div>
         </section>
       </div>
@@ -39,5 +47,8 @@
       </div>
     </div>
   </div>
+  <footer>
+    <p>Dive into Code</p>
+  </footer>
 </body>
 </html>
