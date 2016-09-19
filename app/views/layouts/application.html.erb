@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DicTwitter</title>
+  <title>mock_Twitter</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body>
-
-<%= yield %>
-
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href= "#"><span class="lnr lnr-home"></span></a>
+          <span class="lnr lnr-alarm"></span>
+          <span class="lnr lnr-envelope"></span>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <span class="lnr lnr-magnifier"></span>
+            <a href= "#"><span class="lnr lnr-pencil"></span></a>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+  <div class="contents container">
+    <div class= "row top-row">
+      <div class="col-md-4 col-sm-4">
+        <section>
+          <div class="dashboard dashboard-left">
+            <span>yo</span>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-8 col-sm-8">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
