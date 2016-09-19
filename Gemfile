@@ -46,4 +46,5 @@ end
 ###### 1ulce add ########
 gem 'twitter-bootstrap-rails'
 gem 'jquery-turbolinks'
+gem 'rails_12factor', group: :production
 ###### 1ulce add end ####
