@@ -45,4 +45,5 @@ group :development, :test do
 end
 ###### 1ulce add ########
 gem 'twitter-bootstrap-rails'
+gem 'jquery-turbolinks'
 ###### 1ulce add end ####
