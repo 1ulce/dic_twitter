@@ -11,8 +11,24 @@ header {
   background: #fff;
   height: 46px;
   border-bottom: 1px solid rgba(0,0,0,0.05);
-  span{
+  span.lnr{
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  span.header-word{
+    font-size: 12px;
     margin-right: 10px;
+    vertical-align: middle;
+  }
+  a.btn{
+    vertical-align: middle;
+    padding-right: initial;
+    span.lnr{
+      font-size: 17px;
+    }
+    span.header-word{
+      font-size: 13px;
+    }
   }
   nav.navbar{
     position: fixed;
