@@ -69,6 +69,9 @@ header ul:after {
   .tweets{
     border-bottom: 1px solid #e1e8ed;
     padding: 9px 12px;
+    p{
+      word-break: break-all;
+    }
     .tweet-operation{
       text-align: right;
       margin-right: 20px;
@@ -78,6 +81,9 @@ header ul:after {
     border-bottom: 1px solid #e1e8ed;
     padding: 0px 12px 6px 12px;
   }
+}
+form.new_tweet p {
+  word-break: break-all;
 }
 footer{
   position: fixed;
