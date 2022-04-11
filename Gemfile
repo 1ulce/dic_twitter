@@ -49,5 +49,5 @@ gem 'twitter-bootstrap-rails'
 gem 'jquery-turbolinks'
 gem 'rails_12factor', group: :production
 gem 'json'
-gem 'nokogiri', "1.10.9"
+gem 'nokogiri', "1.13.4"
 ###### 1ulce add end ####
